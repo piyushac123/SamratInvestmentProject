@@ -1,0 +1,303 @@
+<!--<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE></TITLE>
+    </HEAD>
+    <BODY>
+    </BODY>
+</HTML>-->
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE>Samrat Financial Banking</TITLE>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="home.css" rel="stylesheet">
+        <script src="home.js"></script>
+    </HEAD>
+    <BODY style="overflow-x: hidden;">
+        <div>
+            <input type="button" name="feedbackButton" class="feedback">
+        </div>
+        <div class="feedback-form feedb-form" id="feed">
+            <h3 style="color:white;">We are here to help you</h3>
+            <form action="#" method="post">
+                <input type="text" placeholder="Name*" name="Name"><br>
+                <input type="email" placeholder="E-Mail*" name="email"><br>
+                <input type="text" placeholder="Subject" name="Subject"><br>
+                <textarea name="message" placeholder="Message" rows="10" cols="30" style="resize:none;"></textarea><br>
+                <button>SUBMIT</button>
+            </form>
+        </div>
+        <div>
+            <button name="scrollTop" class="top"><i class="fa fa-angle-up"></i></button>
+        </div>
+        <div class="container"id="scrollup">
+            <!--HEADING-->
+            <div class="row" style=' font-family: "Courier";margin-top: 10px;'>
+                <div class="col-lg-1"><h1 style="color:red;font-variant: small-caps;">Samrat</h1></div>
+                <div class="col-lg-1" style="color:blue;margin-left: 50px;"><h4>Financial</h4><h4>Banking</h4></div>
+            </div>
+        </div><hr>
+            <!-- Menu Bar-->
+            <!-- z-index: 10 solved my problem-->
+        <div class="container" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 10">
+            <div class="row" style="margin-top:20px;" id="ham1">
+                <div class="col-lg-1" style="background-color:darkblue;" >
+                    <!-- Menu Tab-->
+                    <div class=" label label-primary" onmouseover="func1(1)"><a href="#" class="menu11">Insight</a></div>
+                    <!-- Menu List Items-->
+                    <div id="id1" class="menu-option">
+                        <a href="#" class="menu-item1">About Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="background-color:darkblue;" >
+                    <div class="label label-primary"><a href="#" class="menu11">Global Service</a></div>
+                </div>
+                <div class="col-lg-2" style="background-color:darkblue;" >
+                    <div class="label label-primary" onmouseover="func1(2)"><a href="#" class="menu11">Financial Service</a></div>
+                    <div id="id2" class="menu-option">
+                        <a href="#" class="menu-item1">Piggy Valley</a><div></div>
+                        <a href="#" class="menu-item1">SamVan Lifetime Plan</a><div></div>
+                        <a href="#" class="menu-item1">Student Growth Plan</a><div></div>
+                        <a href="#" class="menu-item1">Global Growth Plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-1" style="background-color:darkblue;" >
+                    <div class="label label-primary"><a href="#" class="menu11">Pay Here</a></div>
+                </div>
+                <div class="col-lg-1" style="background-color:darkblue;" >
+                    <div class="label label-primary" onmouseover="func1(4)"><a href="#" class="menu11">Contact</a></div>
+                    <div id="id4" class="menu-option">
+                        <a href="#" class="menu-item1">Business</a><div></div>
+                        <a href="#" class="menu-item1">Blog</a><div></div>
+                        <a href="#" class="menu-item1">FAQs</a>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-1" style="background-color: darkblue;" >
+                    <div class="label label-primary" onmouseover="func1(5)"><a href="#" class="menu11">Account</a></div>
+                    <div id="id5" class="menu-option">
+                        <a href="#" class="menu-item1">Register</a><div></div>
+                        <a href="#" class="menu-item1">Sign In</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div  class="row" id="ham2" style="display:none;margin-top:20px;">
+                    <div class="three col">
+                    <div class="hamburger" id="#ham1">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    </div>
+                    <div class="menu">
+                        <div class="item">demo1</div>
+                        <div class="item">demo2</div>
+                        <div class="item">demo3</div>
+                        <div class="item">demo4</div>
+                    </div>
+                </div>
+            <!-- In func1(value) default case of switch-->
+            <div id="default1"></div>
+            
+        </div>
+        <!-- Problem - relative position of menubar and other isn't set-->
+        <div id="resize" class="container-float" style="background-color: #eee;margin-top: 115px;">
+            <div class="row" style="padding: 60px 0 60px 0;">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/saving.jpeg" alt="Saving" class="image1"></a><br>
+                    <h5 style="font-weight: bold;">Personal Saving</h5>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/consultancy.png" alt="Consultancy" class="image1"></a><br>
+                    <h5 style="font-weight: bold;">Financial Consultancy</h5>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/funding.jpeg" alt="Funding" class="image1"></a><br>
+                    <h5 style="font-weight: bold;">Funding</h5>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/freedomVenture.jpeg" alt="Freedom Venture" class="image1"></a><br>
+                    <h5 style="font-weight: bold;">Freedom Venture</h5>
+                </div></div>
+                
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/innovation.jpeg" alt="Innovation" class="image1"></a><br>
+                    <h5 style="font-weight: bold;">Innovation</h5>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/sustainability.jpeg" alt="Sustainability" class="image1"></a><br>
+                    <h5 style="font-weight: bold;">Sustainability</h5>
+                </div></div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+        <div class="container" style="margin-top:50px;">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <div class="tagline">World we<br>define together</div><br>
+                    <span class="tagline2">We </span>
+                    <span class="tagline1">evolved to transform </span>
+                    <span class="tagline2"> the way your economy works for </span>
+                    <span class="tagline1">you, </span>
+                    <span class="tagline2"> to a </span>
+                    <span class="tagline1">great experience.</span>
+                    <span class="tagline2"> What you have earned; Serving you the </span>
+                    <span class="tagline1">Value & Profit.</span>
+                </div>
+                <div class="col-lg-3">
+                    <acronym title="Want any Support?"><a href="#"><img src="../image/support.png" alt="Support site" class="support"></a></acronym>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <u class="tagline3">Financial Service</u>
+                    <ul class="tagline4">
+                        <li>Customise your financial scheme</li>
+                        <li>Strengthening your 'Personal savings'</li>
+                        <li>Minimum assured return rate 8%- 23% to 'Live value'</li>
+                    </ul>
+                    <p style="text-indent: 30px;font-size: 20px;display: none;" id="p1">Financial service is designed to get you higher profit on saving for your financial strength. You can customize your financial plan, let you experience financial freedom. Caring your choice and securing your wealth. Positive loss zone experience.<b> Most profitable personal saving. Advanced, analyzed & valuable investing.</b></p>
+                    <div class="know" id="m1" onclick="show(1)">KNOW MORE......</div>
+                    <div class="know" style="display: none;" id="l1" onclick="hide(1)">KNOW LESS......</div>
+                </div>
+                <div class="col-lg-3"><div class="count">01</div></div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3"><div class="count">02</div></div>
+                <div class="col-lg-7">
+                    <u class="tagline3">Funding</u>
+                    <ul class="tagline4">
+                        <li>Infinite opportunity for startups</li>
+                        <li>Problem solving idea with simplifying life</li>
+                        <li>Excellent business & service arena</li>
+                    </ul>
+                    <p style="text-indent: 30px;font-size: 20px;display: none;" id="p2">Bring your ideas and start-up to a new level of global platform and customer focused. Build your dreams by innovating the way of business and service quality.</p>
+                    <div class="know" id="m2" onclick="show(2)">KNOW MORE......</div>
+                    <div class="know" style="display: none;" id="l2" onclick="hide(2)">KNOW LESS......</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <u class="tagline3 ">Freedom Venture</u>
+                    <ul class="tagline4">
+                        <li>Upgrading investor & service connectivity</li>
+                        <li>Bringing quality experience to people</li>
+                        <li>Service provider & investor profitability</li>
+                    </ul>
+                    <p style="text-indent: 30px;font-size: 20px;display: none;" id="p3">Globally collaboration of moderate investor & small business-brand/ service provider for their mutual growth. Offers quality experience in products and service to people in all locality. Let life be full of moments and livings.</p>
+                    <div class="know" id="m3" onclick="show(3)">KNOW MORE......</div>
+                    <div class="know" style="display: none;" id="l3" onclick="hide(3)">KNOW LESS......</div>
+                </div>
+                <div class="col-lg-3"><div class="count">03</div></div>
+            </div>
+        </div>
+        
+        <div class="container" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3"><div class="count">04</div></div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <u class="tagline3">Financial Consultancy</u>
+                    <p class="tagline4">
+                        Business Features
+                    </p>
+                    <ul>
+                        <a class="list11" href="#"><li>Advanced Deep Insight</li></a>
+                        <a class="list11" href="#"><li>Business Innovation</li></a>
+                        <a class="list11" href="#"><li>Technology and AI</li></a>
+                        <a class="list11" href="#"><li>Operation and Management</li></a>
+                        <a class="list11" href="#"><li>Risk Management and Wealth</li></a>
+                        <a class="list11" href="#"><li>Management</li></a>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <p class="tagline4" style="margin-top: 50px;">
+                        Individual Services
+                    </p>
+                    <ul>
+                        <a class="list11" href="#"><li>Wealth Management</li></a>
+                        <a class="list11" href="#"><li>Financial Planning</li></a>
+                        <a class="list11" href="#"><li>Tax Reduction</li></a>
+                        <a class="list11" href="#"><li>Economic Growth</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-float" style="background-color: #eee;">
+            <div class="row">
+                <h2 style="font-family: serif;text-align: center; font-weight: bold">Recent Startup</h2>
+            </div>
+            <div class="row" style="padding: 60px 0 60px 0;">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/LoveEnStudio.png" alt="LoveEnStudio" class="image2"></a>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/TheDailyGraph.png" alt="TheDailyGraph" class="image2"></a>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/MamaCasa.png" alt="MamaCasa" class="image2"></a>
+                </div></div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="jumbo">
+                    <a href="#"><img src="../image/InspyrFoods.png" alt="InspyrFoods" class="image2"></a>
+                </div></div>
+                
+                <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12"><div class="jumbo">
+                    <a href="#"><img src="../image/Antriksh.png" alt="Antriksh" class="image2" style="margin-left: 15px;"></a>
+                </div></div>
+            </div>
+        </div>
+        <footer class="footRelative1">
+            <div  class="footer1 container">
+            <div class="row">
+                  <div class="col-lg-4">
+                      <b class="foot-head"><div class='fa fa-thumb-tack'></div> About Us</b>
+                      <ul class="foot-text">
+                          <li><a href="#" class="linkFoot">Contact Us</a></li>
+                          <li><a href="#" class="linkFoot">Global Community</a></li>
+                          <li><a href="#" class="linkFoot">Short-term Saving</a></li>
+                          <li><a href="#" class="linkFoot">Long-term Saving</a></li>
+                          <li><a href="#" class="linkFoot">For Students</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-4">
+                      <b class="foot-head"><div class='fa fa-thumb-tack'></div> JOIN US</b><br><br>
+                      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                      <a href="https://plus.google.com/discover"><i class="fa fa-google"></i></a>
+                      <a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                  <div class="col-lg-4">
+                      <b class="foot-head"><div class='fa fa-thumb-tack'></div> Services</b>
+                      <ul class="foot-text">
+                          <li><a href="#" class="linkFoot">Financial Consultancy</a></li>
+                          <li><a href="#" class="linkFoot">Funding</a></li>
+                          <li><a href="#" class="linkFoot">Investment Management</a></li>
+                          <li><a href="#" class="linkFoot">New User</a></li>
+                          <li><a href="#" class="linkFoot">FAQs</a></li>
+                          <li><a href="#" class="linkFoot">Advertise</a></li>
+                      </ul>
+                  </div>
+            </div>
+        </div>
+    </footer>
+        <!-- Replace href="https://www.abc.com" with href="#" using Reg Expression -> [h][r][e][f][=]["][a-zA-Z0-9./?:=]*-->
+    </BODY>
+</HTML>
